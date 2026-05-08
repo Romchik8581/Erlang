@@ -1,0 +1,9 @@
+{application, iotserv,
+ [{description, "IoT server"},
+  {vsn, "0.1.0"},
+  {registered, [iotserv]},
+  {mod, {iotserv_app, []}},
+  {applications, [kernel, stdlib]},
+  {env, [{config_file, "iotserv_config.json"}]},
+  {modules, [iotserv_app, iotserv_sup, iotserv, iotserv_db]}
+ ]}.
