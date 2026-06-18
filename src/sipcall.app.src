@@ -1,0 +1,20 @@
+{application, sipcall, [
+    {description,  "SIP call-back application"},
+    {vsn,          "0.1.0"},
+    {registered,   [sipcall_storage]},
+    {mod,          {sipcall_app, []}},
+    {applications, [
+        kernel,
+        stdlib,
+        crypto,
+        inets,
+        lager,
+        nksip,
+        cowboy,
+        jsx
+    ]},
+    {env,     []},
+    {modules, []},
+    {licenses, ["Apache-2.0"]},
+    {links,    []}
+]}.
